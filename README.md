@@ -1,7 +1,5 @@
 ## Steps to run:
-1. Install django using `requirements.txt` file and below command.
-    `pip install -r requirements.txt`.
-2. Load fixture using below command.
-    `python .\manage.py loaddata .\users\fixtures\myuser.json`
-3. Run the server using below command:
-    `python .\manage.py runserver`
+1. Install django using `requirements.txt` file and `pip install -r requirements.txt`.
+2. Create sample sqlite db using `python .\manage.py migrate`.  
+3. Load fixture using `python .\manage.py loaddata .\users\fixtures\myuser.json`.
+4. Run the server using `python .\manage.py runserver`.
