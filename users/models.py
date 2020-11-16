@@ -1,7 +1,6 @@
 from django.contrib.auth.models import AbstractUser, models
 from django.utils.deconstruct import deconstructible
 from django.utils.translation import ugettext_lazy as _
-import re
 
 from django.core import validators
 
@@ -33,7 +32,6 @@ class MyUnicodeUsernameValidator(validators.RegexValidator):
     regex = r'^[\w.@+-;]+\Z'
 
 
-# Create your models here.
 class MyUser(AbstractUser):
     username = CICharField(
         _('username'),
